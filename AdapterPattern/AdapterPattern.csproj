@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{950C4607-2F4D-499B-89C0-A3AA7142A313}</ProjectGuid>
+    <ProjectGuid>{439763F2-4D0A-4E8B-A595-BC6F82EFEF30}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SolidPrinciples</RootNamespace>
-    <AssemblyName>SolidPrinciples</AssemblyName>
+    <RootNamespace>AdapterPattern</RootNamespace>
+    <AssemblyName>AdapterPattern</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MoreLinq, Version=2.9.21302.0, Culture=neutral, PublicKeyToken=384d532d7e88985d, processorArchitecture=MSIL">
+      <HintPath>..\packages\morelinq.2.9.0\lib\net40\MoreLinq.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -45,39 +48,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DependencyInversionPrinciple\Interfaces\IRelationshipBrowser.cs" />
-    <Compile Include="DependencyInversionPrinciple\Person.cs" />
-    <Compile Include="DependencyInversionPrinciple\Relationships.cs" />
-    <Compile Include="DependencyInversionPrinciple\Research.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\Document.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\Interfaces\IMachine.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\Interfaces\IMultiFunctionDevice.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\Interfaces\IPrinter.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\Interfaces\IScanner.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\MultiFunctionMachine.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\MultiFunctionPrinter.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\OldFashionedPrinter.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\PhotoCopier.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\Printer.cs" />
-    <Compile Include="LiskovSubstitutionPrinciple\Rectangle.cs" />
-    <Compile Include="LiskovSubstitutionPrinciple\Square.cs" />
-    <Compile Include="OpenClosedPrinciple\AndSpecification.cs" />
-    <Compile Include="OpenClosedPrinciple\BetterProductFilter.cs" />
-    <Compile Include="OpenClosedPrinciple\ColorSpecification.cs" />
-    <Compile Include="OpenClosedPrinciple\Interfaces\IFilter.cs" />
-    <Compile Include="OpenClosedPrinciple\Interfaces\ISpecification.cs" />
-    <Compile Include="OpenClosedPrinciple\Product.cs" />
-    <Compile Include="OpenClosedPrinciple\ProductFilter.cs" />
-    <Compile Include="OpenClosedPrinciple\SizeSpecification.cs" />
+    <Compile Include="AdapterPatternExercise.cs" />
+    <Compile Include="NoCaching\Line.cs" />
+    <Compile Include="NoCaching\LineToPointAdapter.cs" />
+    <Compile Include="NoCaching\Point.cs" />
+    <Compile Include="NoCaching\VectorRectangle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SingleResponsibilityPrinciple\Journal.cs" />
-    <Compile Include="SingleResponsibilityPrinciple\Persistence.cs" />
+    <Compile Include="WithCaching\Line.cs" />
+    <Compile Include="WithCaching\LineToPointAdapter.cs" />
+    <Compile Include="WithCaching\Point.cs" />
+    <Compile Include="WithCaching\VectorRectangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

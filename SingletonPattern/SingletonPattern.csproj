@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{950C4607-2F4D-499B-89C0-A3AA7142A313}</ProjectGuid>
+    <ProjectGuid>{622CD00F-C1B4-4DAF-8D92-7E14771B0950}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SolidPrinciples</RootNamespace>
-    <AssemblyName>SolidPrinciples</AssemblyName>
+    <RootNamespace>SingletonPattern</RootNamespace>
+    <AssemblyName>SingletonPattern</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,8 +32,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=4.6.2.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.6.2\lib\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="MoreLinq, Version=2.9.21302.0, Culture=neutral, PublicKeyToken=384d532d7e88985d, processorArchitecture=MSIL">
+      <HintPath>..\packages\morelinq.2.9.0\lib\net40\MoreLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.4.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
     </Reference>
@@ -45,39 +58,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DependencyInversionPrinciple\Interfaces\IRelationshipBrowser.cs" />
-    <Compile Include="DependencyInversionPrinciple\Person.cs" />
-    <Compile Include="DependencyInversionPrinciple\Relationships.cs" />
-    <Compile Include="DependencyInversionPrinciple\Research.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\Document.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\Interfaces\IMachine.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\Interfaces\IMultiFunctionDevice.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\Interfaces\IPrinter.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\Interfaces\IScanner.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\MultiFunctionMachine.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\MultiFunctionPrinter.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\OldFashionedPrinter.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\PhotoCopier.cs" />
-    <Compile Include="InterfaceSegregationPrinciple\Printer.cs" />
-    <Compile Include="LiskovSubstitutionPrinciple\Rectangle.cs" />
-    <Compile Include="LiskovSubstitutionPrinciple\Square.cs" />
-    <Compile Include="OpenClosedPrinciple\AndSpecification.cs" />
-    <Compile Include="OpenClosedPrinciple\BetterProductFilter.cs" />
-    <Compile Include="OpenClosedPrinciple\ColorSpecification.cs" />
-    <Compile Include="OpenClosedPrinciple\Interfaces\IFilter.cs" />
-    <Compile Include="OpenClosedPrinciple\Interfaces\ISpecification.cs" />
-    <Compile Include="OpenClosedPrinciple\Product.cs" />
-    <Compile Include="OpenClosedPrinciple\ProductFilter.cs" />
-    <Compile Include="OpenClosedPrinciple\SizeSpecification.cs" />
+    <Compile Include="MonoStatePattern\ChiefExecutiveOfficer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SingleResponsibilityPrinciple\Journal.cs" />
-    <Compile Include="SingleResponsibilityPrinciple\Persistence.cs" />
+    <Compile Include="SingletonInDI\EventBroker.cs" />
+    <Compile Include="SingletonInDI\Foo.cs" />
+    <Compile Include="SingletonTester.cs" />
+    <Compile Include="SingletonTests.cs" />
+    <Compile Include="Singleton\ConfigurableRecordFinder.cs" />
+    <Compile Include="Singleton\DummyDatabase.cs" />
+    <Compile Include="Singleton\Interfaces\IDatabase.cs" />
+    <Compile Include="Singleton\SingletonDatabase.cs" />
+    <Compile Include="Singleton\SingletonRecordFinder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="capitals.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
