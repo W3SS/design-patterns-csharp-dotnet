@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C834F8D0-9649-436E-9659-DEF85478B3E0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>VisitorPattern</RootNamespace>
+    <AssemblyName>VisitorPattern</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassicVisitor\AdditionExpression.cs" />
+    <Compile Include="ClassicVisitor\DoubleExpression.cs" />
+    <Compile Include="ClassicVisitor\Expression.cs" />
+    <Compile Include="ClassicVisitor\ExpressionCalculator.cs" />
+    <Compile Include="ClassicVisitor\ExpressionPrinter.cs" />
+    <Compile Include="ClassicVisitor\IExpressionVisitor.cs" />
+    <Compile Include="DynamicVisitor\AdditionExpression.cs" />
+    <Compile Include="DynamicVisitor\DoubleExpression.cs" />
+    <Compile Include="DynamicVisitor\Expression.cs" />
+    <Compile Include="DynamicVisitor\ExpressionPrinter.cs" />
+    <Compile Include="IntrusiveExpressionPrinting\AdditionExpression.cs" />
+    <Compile Include="IntrusiveExpressionPrinting\DoubleExpression.cs" />
+    <Compile Include="IntrusiveExpressionPrinting\Expression.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReflectionBasedPrinting\ExpressionPrinter.cs" />
+    <Compile Include="VisitorPatternExercise.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
