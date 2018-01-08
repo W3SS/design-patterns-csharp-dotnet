@@ -12,9 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypePattern", "CreationalPrototypePattern\PrototypePattern.csproj", "{6613F26A-67BA-4A02-B131-6E8DD0660ADD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{E3E41F25-9377-4FCE-BDA3-6DDAEB3480D3}"
-	ProjectSection(SolutionItems) = preProject
-		Readme.txt = Readme.txt
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern", "SingletonPattern\SingletonPattern.csproj", "{622CD00F-C1B4-4DAF-8D92-7E14771B0950}"
 EndProject
@@ -59,6 +56,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethodPattern", "TemplateMethodPattern\TemplateMethodPattern.csproj", "{297479ED-3F22-46E5-8AEB-D88C2951E1E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorPattern", "VisitorPattern\VisitorPattern.csproj", "{C834F8D0-9649-436E-9659-DEF85478B3E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EB80D861-1B5E-4E4C-A9C5-CC30BED093F1}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -189,7 +191,7 @@ Global
 		{9C57A7E7-28C7-4B3A-B4FC-00A8920756A6} = {9F7D88F2-C355-40D3-A60D-0EA6FE27A8A0}
 		{B5E35509-4FC3-4A3E-BDF5-A6B81AF37614} = {9F7D88F2-C355-40D3-A60D-0EA6FE27A8A0}
 		{297479ED-3F22-46E5-8AEB-D88C2951E1E3} = {9F7D88F2-C355-40D3-A60D-0EA6FE27A8A0}
-		{C834F8D0-9649-436E-9659-DEF85478B3E0} = {65905D7B-4494-4AAA-B65B-B8777193CA7B}
+		{C834F8D0-9649-436E-9659-DEF85478B3E0} = {9F7D88F2-C355-40D3-A60D-0EA6FE27A8A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {892B7207-3940-4960-B8A8-C8A1681139E1}
