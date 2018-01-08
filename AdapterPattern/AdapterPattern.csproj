@@ -49,6 +49,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdapterPatternExercise.cs" />
+    <Compile Include="ExamplesForHumans\AdapterClient.cs" />
+    <Compile Include="ExamplesForHumans\AfricanLion.cs" />
+    <Compile Include="ExamplesForHumans\AsianLion.cs" />
+    <Compile Include="ExamplesForHumans\Hunter.cs" />
+    <Compile Include="ExamplesForHumans\ILion.cs" />
+    <Compile Include="ExamplesForHumans\WildDog.cs" />
+    <Compile Include="ExamplesForHumans\WildDogAdapter.cs" />
     <Compile Include="NoCaching\Line.cs" />
     <Compile Include="NoCaching\LineToPointAdapter.cs" />
     <Compile Include="NoCaching\Point.cs" />
@@ -63,6 +70,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
