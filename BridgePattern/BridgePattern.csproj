@@ -51,6 +51,14 @@
   <ItemGroup>
     <Compile Include="BridgePatternExercise.cs" />
     <Compile Include="Circle.cs" />
+    <Compile Include="ExamplesForHumans\About.cs" />
+    <Compile Include="ExamplesForHumans\AquaTheme.cs" />
+    <Compile Include="ExamplesForHumans\BridgeClient.cs" />
+    <Compile Include="ExamplesForHumans\Careers.cs" />
+    <Compile Include="ExamplesForHumans\DarkTheme.cs" />
+    <Compile Include="ExamplesForHumans\ITheme.cs" />
+    <Compile Include="ExamplesForHumans\IWebPage.cs" />
+    <Compile Include="ExamplesForHumans\LightTheme.cs" />
     <Compile Include="Interfaces\IRenderer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,5 +70,9 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

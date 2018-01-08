@@ -15,17 +15,3 @@
 
 	In software engineering, the adapter pattern is a software design pattern that allows the interface of an existing class 
 	to be used as another interface. It is often used to make existing classes work with others without modifying their source code.
-
-- Programmatic Example
-
-	Consider a game where there is a hunter and he hunts lions.
-
-	First we have an interface Lion that all types of lions have to implement.
-
-	And hunter expects any implementation of Lion interface to hunt.
-
-	Now let's say we have to add a WildDog in our game so that hunter can hunt that also. 
-	But we can't do that directly because dog has a different interface. 
-	To make it compatible for our hunter, we will have to create an adapter that is compatible.
-
-	And now the WildDog can be used in our game using WildDogAdapter.
