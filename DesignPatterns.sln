@@ -12,6 +12,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypePattern", "CreationalPrototypePattern\PrototypePattern.csproj", "{6613F26A-67BA-4A02-B131-6E8DD0660ADD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{E3E41F25-9377-4FCE-BDA3-6DDAEB3480D3}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern", "SingletonPattern\SingletonPattern.csproj", "{622CD00F-C1B4-4DAF-8D92-7E14771B0950}"
 EndProject

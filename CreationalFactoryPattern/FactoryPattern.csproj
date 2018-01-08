@@ -45,6 +45,27 @@
     <Compile Include="AbstractFactory\HotDrinkMachine.cs" />
     <Compile Include="AbstractFactory\Interfaces\IHotDrink.cs" />
     <Compile Include="AbstractFactory\Interfaces\IHotDrinkFactory.cs" />
+    <Compile Include="ExamplesForHumans\AbstractFactory\AbstractFactoryClient.cs" />
+    <Compile Include="ExamplesForHumans\AbstractFactory\IAbstractDoorFactory.cs" />
+    <Compile Include="ExamplesForHumans\AbstractFactory\Carpenter.cs" />
+    <Compile Include="ExamplesForHumans\AbstractFactory\IDoor.cs" />
+    <Compile Include="ExamplesForHumans\AbstractFactory\IDoorFittingExpert.cs" />
+    <Compile Include="ExamplesForHumans\AbstractFactory\IronDoor.cs" />
+    <Compile Include="ExamplesForHumans\AbstractFactory\IronDoorFactory.cs" />
+    <Compile Include="ExamplesForHumans\AbstractFactory\Welder.cs" />
+    <Compile Include="ExamplesForHumans\AbstractFactory\WoodenDoor.cs" />
+    <Compile Include="ExamplesForHumans\AbstractFactory\WoodenDoorFactory.cs" />
+    <Compile Include="ExamplesForHumans\FactoryMethod\FactoryMethodClient.cs" />
+    <Compile Include="ExamplesForHumans\FactoryMethod\CommunityExecutive.cs" />
+    <Compile Include="ExamplesForHumans\FactoryMethod\Developer.cs" />
+    <Compile Include="ExamplesForHumans\FactoryMethod\DevelopmentManager.cs" />
+    <Compile Include="ExamplesForHumans\FactoryMethod\HiringManager.cs" />
+    <Compile Include="ExamplesForHumans\FactoryMethod\IInterviewer.cs" />
+    <Compile Include="ExamplesForHumans\FactoryMethod\MarketingManager.cs" />
+    <Compile Include="ExamplesForHumans\SimpleFactory\SimpleFactoryClient.cs" />
+    <Compile Include="ExamplesForHumans\SimpleFactory\DoorFactory.cs" />
+    <Compile Include="ExamplesForHumans\SimpleFactory\IDoor.cs" />
+    <Compile Include="ExamplesForHumans\SimpleFactory\WoodenDoor.cs" />
     <Compile Include="FactoryPatternExercise.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="PointFactory.cs" />
@@ -53,6 +74,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
