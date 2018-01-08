@@ -47,6 +47,9 @@
     <Compile Include="BuilderFacets\PersonBuilder.cs" />
     <Compile Include="BuilderFacets\PersonJobBuilder.cs" />
     <Compile Include="BuilderPatternExercise.cs" />
+    <Compile Include="ExamplesForHumans\BuilderClient.cs" />
+    <Compile Include="ExamplesForHumans\Burger.cs" />
+    <Compile Include="ExamplesForHumans\BurgerBuilder.cs" />
     <Compile Include="HtmlBuilder.cs" />
     <Compile Include="HtmlElement.cs" />
     <Compile Include="Program.cs" />
@@ -54,6 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

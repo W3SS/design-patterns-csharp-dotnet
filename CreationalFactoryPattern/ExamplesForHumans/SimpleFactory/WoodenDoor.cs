@@ -2,23 +2,23 @@
 {
     public class WoodenDoor : IDoor
     {
-        protected float Width;
-        protected float Height;
+        protected float width;
+        protected float height;
 
         public WoodenDoor(float width, float height)
         {
-            this.Width = width;
-            this.Height = height;
+            this.width = width;
+            this.height = height;
         }
 
         public float GetHeight()
         {
-            return this.Height;
+            return this.height;
         }
 
         public float GetWidth()
         {
-            return this.Width;
+            return this.width;
         }
     }
 }

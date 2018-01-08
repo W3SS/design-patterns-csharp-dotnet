@@ -2,7 +2,7 @@
 {
     public class DevelopmentManager : HiringManager
     {
-        protected override IInterviewer MakeInterviewer()
+        protected override IInterviewer makeInterviewer()
         {
             return new Developer();
         }

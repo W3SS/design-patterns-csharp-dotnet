@@ -3,11 +3,11 @@
     public abstract class HiringManager
     {
         // Factory method
-        protected abstract IInterviewer MakeInterviewer();
+        protected abstract IInterviewer makeInterviewer();
 
         public void TakeInterview()
         {
-            var interviewer = this.MakeInterviewer();
+            var interviewer = this.makeInterviewer();
 
             interviewer.AskQuestions();
         }
