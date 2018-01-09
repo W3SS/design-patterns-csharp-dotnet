@@ -48,6 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExamplesForHumans\FlyweightClient.cs" />
+    <Compile Include="ExamplesForHumans\KarakTea.cs" />
+    <Compile Include="ExamplesForHumans\TeaMaker.cs" />
+    <Compile Include="ExamplesForHumans\TeaShop.cs" />
     <Compile Include="FlyWeightPatternExercise.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +63,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
