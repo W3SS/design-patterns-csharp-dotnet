@@ -42,7 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExamplesForHumans\CompositeClient.cs" />
     <Compile Include="CompositePatternExercise.cs" />
+    <Compile Include="ExamplesForHumans\Designer.cs" />
+    <Compile Include="ExamplesForHumans\Developer.cs" />
+    <Compile Include="ExamplesForHumans\IEmployee.cs" />
+    <Compile Include="ExamplesForHumans\Organization.cs" />
     <Compile Include="GeometricShapes\Circle.cs" />
     <Compile Include="GeometricShapes\GraphicObject.cs" />
     <Compile Include="GeometricShapes\Square.cs" />
@@ -53,6 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
