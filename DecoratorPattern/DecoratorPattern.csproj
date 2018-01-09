@@ -50,6 +50,12 @@
     <Compile Include="DynamicDecoratorComposition\Shape.cs" />
     <Compile Include="DynamicDecoratorComposition\Square.cs" />
     <Compile Include="DynamicDecoratorComposition\TransparentShape.cs" />
+    <Compile Include="ExamplesForHumans\DecoratorClient.cs" />
+    <Compile Include="ExamplesForHumans\ICoffee.cs" />
+    <Compile Include="ExamplesForHumans\MilkCoffee.cs" />
+    <Compile Include="ExamplesForHumans\SimpleCoffee.cs" />
+    <Compile Include="ExamplesForHumans\VanillaCoffee.cs" />
+    <Compile Include="ExamplesForHumans\WhipCoffee.cs" />
     <Compile Include="MultipleInheritance\Bird.cs" />
     <Compile Include="MultipleInheritance\Dragon.cs" />
     <Compile Include="MultipleInheritance\Lizard.cs" />
@@ -58,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
