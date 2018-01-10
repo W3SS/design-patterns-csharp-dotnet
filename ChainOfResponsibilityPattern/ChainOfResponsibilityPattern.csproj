@@ -49,6 +49,11 @@
     <Compile Include="BrokerChain\IncreaseDefenseModifierBC.cs" />
     <Compile Include="BrokerChain\Query.cs" />
     <Compile Include="ChainOfResponsibilityExercise.cs" />
+    <Compile Include="ExamplesForHumans\Account.cs" />
+    <Compile Include="ExamplesForHumans\Bank.cs" />
+    <Compile Include="ExamplesForHumans\Bitcoin.cs" />
+    <Compile Include="ExamplesForHumans\ChainOfResponsibilityClient.cs" />
+    <Compile Include="ExamplesForHumans\Paypal.cs" />
     <Compile Include="MethodChain\Creature.cs" />
     <Compile Include="MethodChain\CreatureModifier.cs" />
     <Compile Include="MethodChain\DoubleAttackModifier.cs" />
@@ -59,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
