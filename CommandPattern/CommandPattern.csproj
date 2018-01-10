@@ -45,6 +45,12 @@
     <Compile Include="BankAccount.cs" />
     <Compile Include="BankAccountCommand.cs" />
     <Compile Include="CommandPatternExercise.cs" />
+    <Compile Include="ExamplesForHumans\Bulb.cs" />
+    <Compile Include="ExamplesForHumans\CommandClient.cs" />
+    <Compile Include="ExamplesForHumans\ICommand.cs" />
+    <Compile Include="ExamplesForHumans\RemoteControl.cs" />
+    <Compile Include="ExamplesForHumans\TurnOffCommand.cs" />
+    <Compile Include="ExamplesForHumans\TurnOnCommand.cs" />
     <Compile Include="Interfaces\ICommand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -52,5 +58,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
