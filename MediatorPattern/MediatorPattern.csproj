@@ -76,6 +76,10 @@
     <Compile Include="Eventbroker\PlayerScoredEvent.cs" />
     <Compile Include="Eventbroker\PlayerSentOffEvent.cs" />
     <Compile Include="Eventbroker\Ref.cs" />
+    <Compile Include="ExamplesForHumans\ChatRoom.cs" />
+    <Compile Include="ExamplesForHumans\IChatRoomMediator.cs" />
+    <Compile Include="ExamplesForHumans\MediatorClient.cs" />
+    <Compile Include="ExamplesForHumans\User.cs" />
     <Compile Include="MediatorPatternExercise.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,6 +87,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
