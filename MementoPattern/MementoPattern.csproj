@@ -43,6 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BankAccount.cs" />
+    <Compile Include="ExamplesForHumans\Editor.cs" />
+    <Compile Include="ExamplesForHumans\EditorMemento.cs" />
+    <Compile Include="ExamplesForHumans\MementoClient.cs" />
     <Compile Include="Memento.cs" />
     <Compile Include="MementoPatternExercise.cs" />
     <Compile Include="Program.cs" />
@@ -50,6 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
