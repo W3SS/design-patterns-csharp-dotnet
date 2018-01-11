@@ -55,6 +55,7 @@
     <Compile Include="ExamplesForHumans\Dolphin.cs" />
     <Compile Include="ExamplesForHumans\IAnimal.cs" />
     <Compile Include="ExamplesForHumans\IAnimalOperation.cs" />
+    <Compile Include="ExamplesForHumans\Jump.cs" />
     <Compile Include="ExamplesForHumans\Lion.cs" />
     <Compile Include="ExamplesForHumans\Monkey.cs" />
     <Compile Include="ExamplesForHumans\Speak.cs" />
