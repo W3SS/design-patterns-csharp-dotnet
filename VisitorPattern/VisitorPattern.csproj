@@ -52,6 +52,13 @@
     <Compile Include="DynamicVisitor\DoubleExpression.cs" />
     <Compile Include="DynamicVisitor\Expression.cs" />
     <Compile Include="DynamicVisitor\ExpressionPrinter.cs" />
+    <Compile Include="ExamplesForHumans\Dolphin.cs" />
+    <Compile Include="ExamplesForHumans\IAnimal.cs" />
+    <Compile Include="ExamplesForHumans\IAnimalOperation.cs" />
+    <Compile Include="ExamplesForHumans\Lion.cs" />
+    <Compile Include="ExamplesForHumans\Monkey.cs" />
+    <Compile Include="ExamplesForHumans\Speak.cs" />
+    <Compile Include="ExamplesForHumans\VisitorClient.cs" />
     <Compile Include="IntrusiveExpressionPrinting\AdditionExpression.cs" />
     <Compile Include="IntrusiveExpressionPrinting\DoubleExpression.cs" />
     <Compile Include="IntrusiveExpressionPrinting\Expression.cs" />
@@ -63,5 +70,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
