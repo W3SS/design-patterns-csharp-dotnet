@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExamplesForHumans\Default.cs" />
+    <Compile Include="ExamplesForHumans\IWritingState.cs" />
+    <Compile Include="ExamplesForHumans\LowerCase.cs" />
+    <Compile Include="ExamplesForHumans\StateClient.cs" />
+    <Compile Include="ExamplesForHumans\TextEditor.cs" />
+    <Compile Include="ExamplesForHumans\UpperCase.cs" />
     <Compile Include="HandMadeStateMachine\Enums.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -57,6 +63,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
